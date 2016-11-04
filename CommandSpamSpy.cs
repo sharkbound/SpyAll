@@ -69,9 +69,9 @@ namespace SpyAll
             }
 
             SteamPlayer steamP = null;
-            foreach (var p in Provider.Players)
+            foreach (var p in Provider.clients)
             {
-                if (p.SteamPlayerID.CSteamID == otherPlayer.CSteamID)
+                if (p.playerID.steamID == otherPlayer.CSteamID)
                 {
                     steamP = p;
                     break;

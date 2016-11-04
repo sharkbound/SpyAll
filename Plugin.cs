@@ -68,13 +68,13 @@ namespace SpyAll
                 {
                     moveToDir = moveToDir.Remove(moveToDir.LastIndexOf(@"\Rocket"), 7);
                     spyFolderDir = moveToDir + @"\Spy\";
-                    moveToDir += @"\Spy\" + steamPlayer.playerID.CSteamID.ToString();
+                    moveToDir += @"\Spy\" + steamPlayer.playerID.steamID.ToString();
                 }
                 else
                 {
                     moveToDir = moveToDir.Remove(moveToDir.LastIndexOf("/Rocket"), 7);
                     spyFolderDir = moveToDir + @"/Spy/";
-                    moveToDir += @"/Spy/" + steamPlayer.playerID.CSteamID.ToString();
+                    moveToDir += @"/Spy/" + steamPlayer.playerID.steamID.ToString();
                 }
 
                 if (!System.IO.Directory.Exists(moveToDir))

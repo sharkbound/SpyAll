@@ -23,9 +23,9 @@ namespace SpyAll
 
         public void Execute(IRocketPlayer caller, string[] command)
         {
-            foreach (var steamplayer in Provider.Players)
+            foreach (var steamplayer in Provider.clients)
             {
-                steamplayer.Player.sendScreenshot((CSteamID)0);
+                steamplayer.player.sendScreenshot((CSteamID)0);
             }
         }
 
